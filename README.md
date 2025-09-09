@@ -1,23 +1,38 @@
-# AI Symptom Triage (Demo)
-**Purpose:** Educational demo that suggests likely common infectious conditions and triage level (Home / GP within 48h / Urgent / Emergency) from free-text symptoms.
-**Not medical advice. Do not use for diagnosis or treatment.**
+# MedTriage AI – Symptom Checker & Triage
+
+MedTriage is an AI-powered symptom checker that helps guide users on **common infections and diseases**, providing safe self-care advice and highlighting **red flag symptoms** that require medical attention.  
+
+Live Demo: [MedTriage Streamlit App](https://medtriage-local-trffgeepyq26sgny8kqnaz.streamlit.app/)
+
+---
+
+## Features
+- Enter common symptoms to get:
+  - Possible conditions  
+  - Recommended first-line medicines (with dose suggestions)  
+  - Safety advisories and red flag alerts  
+- Built with **Machine Learning** + **Streamlit UI**  
+- Lightweight, easy to use in a browser  
+
+---
+
+## Tech Stack
+- Python 3.10+  
+- scikit-learn – Model training  
+- pandas / numpy – Data handling  
+- Streamlit – User interface  
+
+---
 
 ## Project Structure
-```
+
+```text
 medtriage/
-  medtriage_dataset.csv
-  vectorizer.joblib
-  classifier.joblib
-  mlb.joblib
-  metrics.json
-  rules.py
-  app.py
-  serve.py
-  train_baseline.py
-  make_dataset.py
-  requirements.txt
-  Dockerfile
-  README.md
+│-- medtriage_streamlit.py   # Streamlit app
+│-- trained_model.pkl        # Trained ML model
+│-- dataset.csv              # Symptoms dataset
+│-- requirements.txt         # Dependencies
+
 ```
 
 ## Quickstart (Local)
