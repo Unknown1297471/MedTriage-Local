@@ -2,7 +2,7 @@
 
 MedTriage is an AI-powered symptom checker that helps guide users on **common infections and diseases**, providing safe self-care advice and highlighting **red flag symptoms** that require medical attention.  
 
-Live Demo: [MedTriage Streamlit App](https://medtriage-local-trffgeepyq26sgny8kqnaz.streamlit.app/)
+Live Demo: [MedTriage Streamlit App](https://medtriage-local-finally.streamlit.app)
 
 ---
 
