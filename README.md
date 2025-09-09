@@ -108,3 +108,157 @@ docker run -p 8000:8000 medtriage uvicorn serve:app --host 0.0.0.0 --port 8000
 - `make_dataset.py`: change conditions, symptoms, distribution.
 - `train_baseline.py`: adjust vectorizer, model, and metrics.
 - `app.py`: change the UI/wording/safety banners.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# **ONLY USE IN CASE OF COMPLETE UTTER FAILURE LIKE OUR LIVES. THANK YOU.**
+
+---
+
+**1. Common Cold**
+
+**Trigger Phrase:** "Runny nose, sneezing, mild sore throat"  
+
+**Expected Triage:** 🏠 Home care  
+
+**Expected Conditions:**  
+- Common Cold: 85%  
+- Viral Pharyngitis: 10%  
+- Acute Sinusitis: 5%  
+
+---
+
+**2. Influenza (Flu)**
+
+**Trigger Phrase:** "Sudden onset of high fever, severe body aches"  
+
+**Expected Triage:** ⚠️ Urgent  
+
+**Expected Conditions:**  
+- Influenza: 90%  
+- COVID-like Illness: 5%  
+- Community-Acquired Pneumonia: 5%  
+
+---
+
+**3. Gastroenteritis**
+
+**Trigger Phrase:** "Watery diarrhea, nausea, vomiting, and stomach cramps"  
+
+**Expected Triage:** 🏠 Home care  
+
+**Expected Conditions:**  
+- Gastroenteritis: 70%  
+- Food Poisoning: 30%  
+
+---
+
+**4. Severe Bleeding**
+
+**Trigger Phrase:** "severe bleeding that won't stop"  
+
+**Expected Triage:** 🚑 Emergency  
+
+**Expected Conditions:**  
+- Traumatic Injury: 99%  
+
+---
+
+**5. Urinary Tract Infection (UTI)**
+
+**Trigger Phrase:** "Frequent urge to urinate, a burning sensation"  
+
+**Expected Triage:** ℹ️ GP within 48h  
+
+**Expected Conditions:**  
+- Urinary Tract Infection: 95%  
+
+---
+
+**6. Strep Throat**
+
+**Trigger Phrase:** "Very painful sore throat, hurts to swallow"  
+
+**Expected Triage:** ℹ️ GP within 48h  
+
+**Expected Conditions:**  
+- Strep Throat: 75%  
+- Tonsillitis: 20%  
+- Viral Pharyngitis: 5%  
+
+---
+
+**7. Severe Abdominal Pain**
+
+**Trigger Phrase:** "Sudden and severe abdominal pain in the lower right side"  
+
+**Expected Triage:** 🚑 Emergency  
+
+**Expected Conditions:**  
+- Suspected Appendicitis: 90%  
+- Gastroenteritis: 10%  
+
+---
+
+**8. Conjunctivitis (Pink Eye)**
+
+**Trigger Phrase:** "right eye is red, itchy, and has a goopy yellow discharge"  
+
+**Expected Triage:** 🏠 Home care  
+
+**Expected Conditions:**  
+- Conjunctivitis: 98%  
+
+---
+
+**9. Infant Fever**
+
+**Trigger Phrase:** "infant very fussy and crying, not feeding well"  
+
+**Expected Triage:** ⚠️ Urgent  
+
+**Expected Conditions:**  
+- Bronchiolitis: 40%  
+- Common Cold: 30%  
+- Otitis Media (Ear Infection): 20%  
+
+---
+
+**10. Skin Infection**
+
+**Trigger Phrase:** "cut on my leg from a few days ago is now red, swollen"  
+
+**Expected Triage:** ℹ️ GP within 48h  
+
+**Expected Conditions:**  
+- Cellulitis: 80%  
+- Skin Abscess: 20%  
+
